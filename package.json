@@ -1,0 +1,22 @@
+{
+  "name": "mubashir-farooq-portfolio",
+  "version": "1.0.0",
+  "description": "Developer Portfolio & Interactive Admin Panel Website for Muhammad Mubashir Farooq",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "backend",
+    "database",
+    "sql"
+  ],
+  "author": "Muhammad Mubashir Farooq",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

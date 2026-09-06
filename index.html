@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Mubashir Farooq | Database & Backend Developer</title>
+    <meta name="description" content="Portfolio of Muhammad Mubashir Farooq - Computer Science Student (BSCS at Ilma University), Database & Backend Developer, Web Scraping & Data Solutions Specialist.">
+    <meta name="keywords" content="Muhammad Mubashir Farooq, Database Developer, Backend Developer, C++, Java, Python, SQL, Web Scraping, Ilma University, Data Science">
+    <meta name="author" content="Muhammad Mubashir Farooq">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">MMF</div>
+                <span>Mubashir<span style="color: var(--accent-cyan);">.dev</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link"><i class="lucide-user" style="width: 16px;"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="lucide-code-2" style="width: 16px;"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="lucide-folder-git-2" style="width: 16px;"></i> Projects</a></li>
+                <li><a href="#admin-dashboard" class="nav-link" style="color: var(--accent-cyan);"><i class="lucide-layout-dashboard" style="width: 16px;"></i> Admin Panel</a></li>
+                <li><a href="#education" class="nav-link"><i class="lucide-graduation-cap" style="width: 16px;"></i> Education</a></li>
+                <li><a href="#contact" class="nav-link"><i class="lucide-mail" style="width: 16px;"></i> Contact</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="pulse-dot"></span>
+                        Available for Backend, Database & Data Engineering Roles
+                    </div>
+
+                    <h1 class="hero-name">
+                        Hi, I'm <br>
+                        <span class="gradient-text">Muhammad Mubashir Farooq</span>
+                    </h1>
+
+                    <p class="hero-tagline">
+                        Database & Backend Developer <span style="color: var(--accent-cyan);">|</span> Software Engineering Student <span style="color: var(--accent-emerald);">|</span> Web Scraping & Data Solutions Specialist
+                    </p>
+
+                    <p style="color: var(--text-secondary); max-width: 580px; font-size: 1rem; line-height: 1.6;">
+                        BSCS Undergraduate at Ilma University specializing in relational database architecture, high-performance SQL optimization, custom Python scraping pipelines, and scalable backend applications.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="lucide-folder-code"></i> View Projects
+                        </a>
+                        <a href="#admin-dashboard" class="btn btn-emerald">
+                            <i class="lucide-terminal"></i> Launch Admin Panel
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="lucide-send"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">BSCS</span>
+                            <span class="stat-label">Ilma University</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">SQL & OOP</span>
+                            <span class="stat-label">Database & Core Dev</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">ETL & Data</span>
+                            <span class="stat-label">Automation Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Terminal Widget -->
+                <div class="terminal-window glass-card">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn btn-red"></span>
+                            <span class="terminal-btn btn-yellow"></span>
+                            <span class="terminal-btn btn-green"></span>
+                        </div>
+                        <span class="terminal-title">mubashir@backend-server:~</span>
+                        <i class="lucide-terminal" style="width: 14px; color: var(--text-muted);"></i>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="code-comment">// Developer Profile & Core System Specs</p>
+                        <p><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</p>
+                        <p>&nbsp;&nbsp;name: <span class="code-str">"Muhammad Mubashir Farooq"</span>,</p>
+                        <p>&nbsp;&nbsp;education: <span class="code-str">"BSCS @ Ilma University"</span>,</p>
+                        <p>&nbsp;&nbsp;certified: <span class="code-str">"Data Science (NED University)"</span>,</p>
+                        <p>&nbsp;&nbsp;specializations: [</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Database Architecture & SQL Optimization"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Backend Systems (Node.js & C++/Java OOP)"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Web Scraping & Automated Data Extraction"</span></p>
+                        <p>&nbsp;&nbsp;],</p>
+                        <p>&nbsp;&nbsp;status: <span class="code-str">"Actively Architecting Solutions"</span></p>
+                        <p>};</p>
+                        <br>
+                        <p class="code-comment">// Executing query command...</p>
+                        <p style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-emerald);">
+                            <span>$</span> <span id="typewriter-text"></span><span style="animation: pulse-ring 1s infinite;">|</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-cyan">About Me</span>
+                <h2 class="section-title">Strong Analytical Foundations & Backend Focus</h2>
+                <p class="section-subtitle">Combining academic excellence at Ilma University with practical backend system architecture and part-time teaching experience.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="glass-card about-card-inner">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;" class="gradient-text">Architecting Data-Driven Infrastructure</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1rem; line-height: 1.7;">
+                        I am an enthusiastic Computer Science (BSCS) undergraduate at <strong>Ilma University</strong> with a strong core focus on database management architecture, backend systems engineering, and automated data solutions.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1rem; line-height: 1.7;">
+                        My technical ethos revolves around writing clean, optimized code—whether structuring complex relational database schemas, engineering robust C++/Java object-oriented systems, or harvesting web-scale datasets using custom Python automated scrapers.
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7;">
+                        In addition to software engineering, my background in <strong>part-time teaching</strong> sharpens my communication skills, analytical rigor, and capacity to decompose complex algorithmic challenges into clear, manageable system designs.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="glass-card highlight-box">
+                        <i class="lucide-database highlight-icon"></i>
+                        <div>
+                            <h4 class="highlight-title">Database Architecture</h4>
+                            <p class="highlight-desc">Relational schema design, normalization, indexing & complex SQL queries.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card highlight-box">
+                        <i class="lucide-bot highlight-icon"></i>
+                        <div>
+                            <h4 class="highlight-title">Web Scraping & ETL</h4>
+                            <p class="highlight-desc">Custom Python automation suites, data extraction & anti-bot bypass.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card highlight-box">
+                        <i class="lucide-book-open highlight-icon"></i>
+                        <div>
+                            <h4 class="highlight-title">Academic & Teaching</h4>
+                            <p class="highlight-desc">BSCS student at Ilma University with peer mentorship & tutoring experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card highlight-box">
+                        <i class="lucide-bar-chart-3 highlight-icon"></i>
+                        <div>
+                            <h4 class="highlight-title">Data Science (NED Certified)</h4>
+                            <p class="highlight-desc">PITP Phase II certification in statistical data analysis & workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-emerald">Technical Stack</span>
+                <h2 class="section-title">Skills & Core Expertise</h2>
+                <p class="section-subtitle">Filter by specialization to inspect technical proficiency across languages, database management, and automation tooling.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-filter="all">All Skills</button>
+                <button class="tab-btn" data-filter="Core & Programming">Core & Programming</button>
+                <button class="tab-btn" data-filter="Backend & Database">Backend & Database</button>
+                <button class="tab-btn" data-filter="Specialized & Automation">Specialized & Automation</button>
+            </div>
+
+            <!-- Dynamic Skills Grid -->
+            <div class="skills-grid" id="skills-container">
+                <!-- Populated dynamically via main.js from config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-purple">Featured Work</span>
+                <h2 class="section-title">Backend & Database Solutions</h2>
+                <p class="section-subtitle">Prototypes, hackathon engineering projects, full-stack applications, and automated data collection tools.</p>
+            </div>
+
+            <!-- Dynamic Projects Grid -->
+            <div class="projects-grid" id="projects-container">
+                <!-- Populated dynamically via main.js from config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Interactive Admin Panel Dashboard Section -->
+    <section class="section admin-section" id="admin-dashboard">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-cyan"><i class="lucide-layout-dashboard"></i> Live Technical Showcase</span>
+                <h2 class="section-title">Interactive Database & Backend Admin Panel</h2>
+                <p class="section-subtitle">Test-drive a simulated backend management console showcasing real-time database query execution, scraping queue telemetry, and system telemetry gauges.</p>
+            </div>
+
+            <div class="admin-mockup-wrapper">
+                <!-- Admin Top Bar -->
+                <div class="admin-topbar">
+                    <div class="admin-brand">
+                        <i class="lucide-server"></i>
+                        <span>Mubashir DB Admin Console v2.4</span>
+                    </div>
+
+                    <div class="admin-status">
+                        <span class="status-indicator"><span class="dot-green"></span> PostgreSQL: Connected</span>
+                        <span class="status-indicator"><span class="dot-blue"></span> Scraper Service: Online</span>
+                        <button class="btn btn-outline btn-sm" id="toggle-scraper-btn">
+                            <i class="lucide-pause"></i> Pause Pipeline
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Admin Main Layout -->
+                <div class="admin-layout">
+                    <!-- Sidebar Navigation -->
+                    <aside class="admin-sidebar">
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item active">
+                                <i class="lucide-database" style="width: 18px;"></i> SQL Query Console
+                            </li>
+                            <li class="sidebar-item">
+                                <i class="lucide-activity" style="width: 18px;"></i> ThermoRail Telemetry
+                            </li>
+                            <li class="sidebar-item">
+                                <i class="lucide-spider" style="width: 18px;"></i> Scraping Pipelines
+                            </li>
+                            <li class="sidebar-item">
+                                <i class="lucide-shopping-cart" style="width: 18px;"></i> E-Com Orders Audit
+                            </li>
+                            <li class="sidebar-item">
+                                <i class="lucide-shield-check" style="width: 18px;"></i> System Logs
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- Main Admin Content Area -->
+                    <main class="admin-content">
+                        <!-- Top Live Metrics Cards -->
+                        <div class="dash-metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-label">DB Connection Pool</div>
+                                <div class="metric-val" id="metric-db-conn">42 Pool Conns</div>
+                                <div class="metric-trend trend-up"><i class="lucide-arrow-up-right" style="width: 14px;"></i> 99.98% Health</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Avg Query Latency</div>
+                                <div class="metric-val" id="metric-latency">1.8 ms</div>
+                                <div class="metric-trend trend-cyan"><i class="lucide-zap" style="width: 14px;"></i> High Perf Index</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Scraping Extraction</div>
+                                <div class="metric-val" id="metric-rate">1,480 req/m</div>
+                                <div class="metric-trend trend-up"><i class="lucide-check-circle" style="width: 14px;"></i> Active Jobs: 3</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Memory Footprint</div>
+                                <div class="metric-val">184.2 MB</div>
+                                <div class="metric-trend trend-cyan"><i class="lucide-cpu" style="width: 14px;"></i> 4 Workers Sync</div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive SQL Console Card -->
+                        <div class="sql-console-card">
+                            <div class="sql-console-header">
+                                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.4rem;">
+                                    <i class="lucide-terminal" style="width: 14px; color: var(--accent-cyan);"></i> Preset SQL Queries:
+                                </span>
+                                <div class="sql-preset-btns">
+                                    <button class="sql-preset-btn" data-preset="thermorail">ThermoRail Heatwave Logs</button>
+                                    <button class="sql-preset-btn" data-preset="scraping">Scraping Queue Pipeline</button>
+                                    <button class="sql-preset-btn" data-preset="ecommerce">E-Commerce Orders</button>
+                                    <button class="sql-preset-btn" data-preset="db_audit">DB Connections Audit</button>
+                                </div>
+                            </div>
+
+                            <div class="sql-input-area">
+                                <span class="sql-prompt">sql></span>
+                                <input type="text" id="sql-input" class="sql-input" value="SELECT track_id, thermal_stress_c, buckling_risk_level, speed_restriction_kmh FROM thermorail_logs WHERE temp > 40 ORDER BY timestamp DESC LIMIT 4;">
+                                <button class="btn btn-cyan btn-sm" id="run-sql-btn">
+                                    <i class="lucide-play" style="width: 14px;"></i> Execute
+                                </button>
+                            </div>
+
+                            <!-- Dynamic SQL Output Table -->
+                            <div class="sql-output-table-wrapper" id="sql-output-container">
+                                <!-- Populated dynamically by dashboard.js -->
+                            </div>
+                        </div>
+
+                        <!-- Live Console Log Stream -->
+                        <div>
+                            <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                <span><i class="lucide-radio" style="width: 14px; color: var(--accent-emerald);"></i> Live System Event Stream</span>
+                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Auto-Refresh: Active</span>
+                            </div>
+                            <div class="admin-log-terminal" id="log-console">
+                                <div class="log-line"><span class="log-time">[12:15:40]</span> <span class="log-tag-success">SUCCESS</span> Initialized PostgreSQL pool connection cluster.</div>
+                                <div class="log-line"><span class="log-time">[12:15:42]</span> <span class="log-tag-info">INFO</span> ThermoRail sensor stream listening on port 8080.</div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-amber">Academics & Growth</span>
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">Academic foundations, professional data science certifications, and ongoing exploration of modern software paradigms.</p>
+            </div>
+
+            <div class="education-grid">
+                <!-- Academic Degree Card -->
+                <div class="glass-card edu-card">
+                    <div class="edu-header">
+                        <span class="badge badge-cyan mb-2">Academic Degree</span>
+                        <h3 class="edu-institution">Ilma University</h3>
+                        <h4 class="edu-degree">Bachelor of Science in Computer Science (BSCS)</h4>
+                        <p class="edu-period"><i class="lucide-calendar" style="width: 14px;"></i> Currently Enrolled (2nd Semester Onwards)</p>
+                    </div>
+                    <ul class="project-highlights-list">
+                        <li>Core emphasis on Object-Oriented Programming (C++, Java) & Algorithm Design</li>
+                        <li>Database Management Systems (DBMS), Relational Schema Design & SQL</li>
+                        <li>Active peer collaboration, mentoring, and technical workshops</li>
+                    </ul>
+                </div>
+
+                <!-- Certification Card -->
+                <div class="glass-card edu-card">
+                    <div class="edu-header">
+                        <span class="badge badge-emerald mb-2">Professional Certification</span>
+                        <h3 class="edu-institution">NED University of Engineering & Technology</h3>
+                        <h4 class="edu-degree">Data Science Training Course Certification</h4>
+                        <p class="edu-period"><i class="lucide-award" style="width: 14px;"></i> PITP Phase II Batch I Certified</p>
+                    </div>
+                    <ul class="project-highlights-list">
+                        <li>Comprehensive hands-on training in Data Analysis, Python & SQL querying</li>
+                        <li>Data manipulation, statistical analysis & data visualization using Pandas/NumPy</li>
+                        <li>Practical capstone dataset analytics & extraction workflow implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Continuous Learning Banner -->
+            <div class="glass-card" style="margin-top: 2rem; padding: 1.75rem;">
+                <h4 style="font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="lucide-sparkles"></i> Continuous Learning & Modern Paradigms
+                </h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                    <span class="tag-pill" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Agentic AI Frameworks</span>
+                    <span class="tag-pill" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Advanced SQL Indexing & Query Tuning</span>
+                    <span class="tag-pill" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Enterprise Backend System Architecture</span>
+                    <span class="tag-pill" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Pedagogical Teaching Techniques</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Socials Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-cyan">Get In Touch</span>
+                <h2 class="section-title">Let's Connect & Build Together</h2>
+                <p class="section-subtitle">Whether you have a database query, backend opportunity, web scraping pipeline task, or technical inquiry—reach out directly!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info & Links -->
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Contact Details</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Feel free to drop a message or reach out across any of the platforms below.</p>
+
+                    <div class="contact-info-list">
+                        <a href="mailto:mubashir.farooq.dev@example.com" class="contact-item">
+                            <div class="contact-icon"><i class="lucide-mail"></i></div>
+                            <div>
+                                <div style="font-size: 0.82rem; color: var(--text-muted);">Email Address</div>
+                                <div style="font-weight: 600;">mubashir.farooq.dev@example.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/github_link_here" target="_blank" rel="noopener" class="contact-item">
+                            <div class="contact-icon"><i class="lucide-github"></i></div>
+                            <div>
+                                <div style="font-size: 0.82rem; color: var(--text-muted);">GitHub Profile</div>
+                                <div style="font-weight: 600;">github.com/github_link_here</div>
+                            </div>
+                        </a>
+
+                        <a href="https://upwork.com/freelancers/upwork_profile_here" target="_blank" rel="noopener" class="contact-item">
+                            <div class="contact-icon"><i class="lucide-briefcase"></i></div>
+                            <div>
+                                <div style="font-size: 0.82rem; color: var(--text-muted);">Upwork Freelance</div>
+                                <div style="font-weight: 600;">upwork.com/freelancers/upwork_profile_here</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-item" style="cursor: default;">
+                            <div class="contact-icon"><i class="lucide-map-pin"></i></div>
+                            <div>
+                                <div style="font-size: 0.82rem; color: var(--text-muted);">Location</div>
+                                <div style="font-weight: 600;">Karachi, Pakistan (Ilma University)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="glass-card" style="padding: 2.25rem;">
+                    <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Send a Message</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="form-name">Your Full Name *</label>
+                            <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="form-email">Email Address *</label>
+                            <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="form-message">Project or Inquiry Details *</label>
+                            <textarea id="form-message" class="form-textarea" placeholder="Tell me about your project, backend requirements, or database needs..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                            <i class="lucide-send"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <div class="logo-icon">MMF</div>
+                <span>Muhammad Mubashir Farooq</span>
+            </div>
+
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Database & Backend Developer | Software Engineering Student @ Ilma University
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/github_link_here" target="_blank" class="social-icon" title="GitHub"><i class="lucide-github"></i></a>
+                <a href="https://linkedin.com/in/linkedin_link_here" target="_blank" class="social-icon" title="LinkedIn"><i class="lucide-linkedin"></i></a>
+                <a href="https://upwork.com/freelancers/upwork_profile_here" target="_blank" class="social-icon" title="Upwork"><i class="lucide-briefcase"></i></a>
+                <a href="mailto:mubashir.farooq.dev@example.com" class="social-icon" title="Email"><i class="lucide-mail"></i></a>
+            </div>
+
+            <p style="margin-top: 1rem;">
+                &copy; 2026 Muhammad Mubashir Farooq. All rights reserved. Modular placeholder variables configured in <code>js/config.js</code>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal Popup Structure -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body-content">
+                <!-- Rendered dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
