@@ -123,12 +123,8 @@ function renderProjectsFromConfig() {
                         <i class="lucide-layers"></i> Details
                     </button>
                     <div class="project-links">
-                        <a href="${project.githubUrl}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" title="Repository Link">
-                            <i class="lucide-github"></i> GitHub
-                        </a>
-                        <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm" title="Live Demo">
-                            <i class="lucide-external-link"></i> Live
-                        </a>
+                     ${project.githubUrl && project.githubUrl !== '#' ? `<a href="${project.githubUrl}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" title="View Source Code"><i class="lucide-github"></i> GitHub</a>` : ''}
+${project.liveUrl && project.liveUrl !== '#' ? `<a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm" title="View Live Demo"><i class="lucide-external-link"></i> Live</a>` : ''}
                     </div>
                 </div>
             </div>

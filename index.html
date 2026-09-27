@@ -190,38 +190,7 @@
         </div>
     </section>
 
-    <!-- Skills & Expertise Section -->
-    <section class="section" id="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-emerald">Technical Stack</span>
-                <h2 class="section-title">Skills & Core Expertise</h2>
-                <p class="section-subtitle">Filter by specialization to inspect technical proficiency across languages, database management, and automation tooling.</p>
-            </div>
 
-            <!-- Category Filter Tabs -->
-            <div class="skills-tabs">
-                <button class="tab-btn active" data-filter="all">All Skills</button>
-                <button class="tab-btn" data-filter="Core & Programming">Core & Programming</button>
-                <button class="tab-btn" data-filter="Backend & Database">Backend & Database</button>
-                <button class="tab-btn" data-filter="Specialized & Automation">Specialized & Automation</button>
-            </div>
-
-            <!-- Dynamic Skills Grid -->
-            <div class="skills-grid" id="skills-container">
-                <!-- Populated dynamically via main.js from config.js -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-purple">Featured Work</span>
-                <h2 class="section-title">Backend & Database Solutions</h2>
-                <p class="section-subtitle">Prototypes, hackathon engineering projects, full-stack applications, and automated data collection tools.</p>
-            </div>
 
             <!-- Dynamic Projects Grid -->
             <div class="projects-grid" id="projects-container">
@@ -230,121 +199,58 @@
         </div>
     </section>
 
-    <!-- Dedicated Interactive Admin Panel Dashboard Section -->
-    <section class="section admin-section" id="admin-dashboard">
+    <!-- Specialized Services Offered Section -->
+    <section class="section" id="admin-dashboard">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-cyan"><i class="lucide-layout-dashboard"></i> Live Technical Showcase</span>
-                <h2 class="section-title">Interactive Database & Backend Admin Panel</h2>
-                <p class="section-subtitle">Test-drive a simulated backend management console showcasing real-time database query execution, scraping queue telemetry, and system telemetry gauges.</p>
+                <span class="badge badge-cyan"><i class="lucide-briefcase"></i> Freelance Capabilities</span>
+                <h2 class="section-title">Specialized Services & Client Solutions</h2>
+                <p class="section-subtitle">Tailored backend engineering, custom data scraping pipelines, and high-performance database management for modern web applications.</p>
             </div>
 
-            <div class="admin-mockup-wrapper">
-                <!-- Admin Top Bar -->
-                <div class="admin-topbar">
-                    <div class="admin-brand">
-                        <i class="lucide-server"></i>
-                        <span>Mubashir DB Admin Console v2.4</span>
-                    </div>
-
-                    <div class="admin-status">
-                        <span class="status-indicator"><span class="dot-green"></span> PostgreSQL: Connected</span>
-                        <span class="status-indicator"><span class="dot-blue"></span> Scraper Service: Online</span>
-                        <button class="btn btn-outline btn-sm" id="toggle-scraper-btn">
-                            <i class="lucide-pause"></i> Pause Pipeline
-                        </button>
+            <div class="about-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <!-- Service 1 -->
+                <div class="glass-card highlight-box" style="padding: 1.75rem;">
+                    <i class="lucide-database highlight-icon" style="font-size: 2rem; color: var(--accent-cyan);"></i>
+                    <div>
+                        <h3 class="highlight-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Relational Database Architecture & SQL Optimization</h3>
+                        <p class="highlight-desc" style="line-height: 1.6;">
+                            Custom ERD design, 3NF database normalization, complex query tuning, indexing, stored procedures, and triggers for fast transactional workloads.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Admin Main Layout -->
-                <div class="admin-layout">
-                    <!-- Sidebar Navigation -->
-                    <aside class="admin-sidebar">
-                        <ul class="sidebar-menu">
-                            <li class="sidebar-item active">
-                                <i class="lucide-database" style="width: 18px;"></i> SQL Query Console
-                            </li>
-                            <li class="sidebar-item">
-                                <i class="lucide-activity" style="width: 18px;"></i> ThermoRail Telemetry
-                            </li>
-                            <li class="sidebar-item">
-                                <i class="lucide-spider" style="width: 18px;"></i> Scraping Pipelines
-                            </li>
-                            <li class="sidebar-item">
-                                <i class="lucide-shopping-cart" style="width: 18px;"></i> E-Com Orders Audit
-                            </li>
-                            <li class="sidebar-item">
-                                <i class="lucide-shield-check" style="width: 18px;"></i> System Logs
-                            </li>
-                        </ul>
-                    </aside>
+                <!-- Service 2 -->
+                <div class="glass-card highlight-box" style="padding: 1.75rem;">
+                    <i class="lucide-server highlight-icon" style="font-size: 2rem; color: var(--accent-emerald);"></i>
+                    <div>
+                        <h3 class="highlight-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">RESTful API & Node.js Backend Development</h3>
+                        <p class="highlight-desc" style="line-height: 1.6;">
+                            Scalable backend API development with Express.js, JWT authentication, request validation middlewares, error-handling pipelines, and MySQL/PostgreSQL integration.
+                        </p>
+                    </div>
+                </div>
 
-                    <!-- Main Admin Content Area -->
-                    <main class="admin-content">
-                        <!-- Top Live Metrics Cards -->
-                        <div class="dash-metrics-grid">
-                            <div class="metric-card">
-                                <div class="metric-label">DB Connection Pool</div>
-                                <div class="metric-val" id="metric-db-conn">42 Pool Conns</div>
-                                <div class="metric-trend trend-up"><i class="lucide-arrow-up-right" style="width: 14px;"></i> 99.98% Health</div>
-                            </div>
-                            <div class="metric-card">
-                                <div class="metric-label">Avg Query Latency</div>
-                                <div class="metric-val" id="metric-latency">1.8 ms</div>
-                                <div class="metric-trend trend-cyan"><i class="lucide-zap" style="width: 14px;"></i> High Perf Index</div>
-                            </div>
-                            <div class="metric-card">
-                                <div class="metric-label">Scraping Extraction</div>
-                                <div class="metric-val" id="metric-rate">1,480 req/m</div>
-                                <div class="metric-trend trend-up"><i class="lucide-check-circle" style="width: 14px;"></i> Active Jobs: 3</div>
-                            </div>
-                            <div class="metric-card">
-                                <div class="metric-label">Memory Footprint</div>
-                                <div class="metric-val">184.2 MB</div>
-                                <div class="metric-trend trend-cyan"><i class="lucide-cpu" style="width: 14px;"></i> 4 Workers Sync</div>
-                            </div>
-                        </div>
+                <!-- Service 3 -->
+                <div class="glass-card highlight-box" style="padding: 1.75rem;">
+                    <i class="lucide-spider highlight-icon" style="font-size: 2rem; color: var(--accent-cyan);"></i>
+                    <div>
+                        <h3 class="highlight-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Automated Web Scraping & Data Extraction</h3>
+                        <p class="highlight-desc" style="line-height: 1.6;">
+                            Custom Python scraping suites utilizing BeautifulSoup and Selenium. Includes proxy rotation, rate-limit bypass, data deduplication, and direct SQL export pipelines.
+                        </p>
+                    </div>
+                </div>
 
-                        <!-- Interactive SQL Console Card -->
-                        <div class="sql-console-card">
-                            <div class="sql-console-header">
-                                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.4rem;">
-                                    <i class="lucide-terminal" style="width: 14px; color: var(--accent-cyan);"></i> Preset SQL Queries:
-                                </span>
-                                <div class="sql-preset-btns">
-                                    <button class="sql-preset-btn" data-preset="thermorail">ThermoRail Heatwave Logs</button>
-                                    <button class="sql-preset-btn" data-preset="scraping">Scraping Queue Pipeline</button>
-                                    <button class="sql-preset-btn" data-preset="ecommerce">E-Commerce Orders</button>
-                                    <button class="sql-preset-btn" data-preset="db_audit">DB Connections Audit</button>
-                                </div>
-                            </div>
-
-                            <div class="sql-input-area">
-                                <span class="sql-prompt">sql></span>
-                                <input type="text" id="sql-input" class="sql-input" value="SELECT track_id, thermal_stress_c, buckling_risk_level, speed_restriction_kmh FROM thermorail_logs WHERE temp > 40 ORDER BY timestamp DESC LIMIT 4;">
-                                <button class="btn btn-cyan btn-sm" id="run-sql-btn">
-                                    <i class="lucide-play" style="width: 14px;"></i> Execute
-                                </button>
-                            </div>
-
-                            <!-- Dynamic SQL Output Table -->
-                            <div class="sql-output-table-wrapper" id="sql-output-container">
-                                <!-- Populated dynamically by dashboard.js -->
-                            </div>
-                        </div>
-
-                        <!-- Live Console Log Stream -->
-                        <div>
-                            <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
-                                <span><i class="lucide-radio" style="width: 14px; color: var(--accent-emerald);"></i> Live System Event Stream</span>
-                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Auto-Refresh: Active</span>
-                            </div>
-                            <div class="admin-log-terminal" id="log-console">
-                                <div class="log-line"><span class="log-time">[12:15:40]</span> <span class="log-tag-success">SUCCESS</span> Initialized PostgreSQL pool connection cluster.</div>
-                                <div class="log-line"><span class="log-time">[12:15:42]</span> <span class="log-tag-info">INFO</span> ThermoRail sensor stream listening on port 8080.</div>
-                            </div>
-                        </div>
-                    </main>
+                <!-- Service 4 -->
+                <div class="glass-card highlight-box" style="padding: 1.75rem;">
+                    <i class="lucide-workflow highlight-icon" style="font-size: 2rem; color: var(--accent-emerald);"></i>
+                    <div>
+                        <h3 class="highlight-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data Cleaning, Transformation & ETL Pipelines</h3>
+                        <p class="highlight-desc" style="line-height: 1.6;">
+                            Automated data validation and ETL workflows using Python (Pandas/NumPy) to clean unstructured JSON/CSV datasets and load them into relational schemas.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -421,40 +327,48 @@
                     <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Contact Details</h3>
                     <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Feel free to drop a message or reach out across any of the platforms below.</p>
 
-                    <div class="contact-info-list">
-                        <a href="mailto:mubashir.farooq.dev@example.com" class="contact-item">
-                            <div class="contact-icon"><i class="lucide-mail"></i></div>
-                            <div>
-                                <div style="font-size: 0.82rem; color: var(--text-muted);">Email Address</div>
-                                <div style="font-weight: 600;">mubashir.farooq.dev@example.com</div>
-                            </div>
-                        </a>
+<div class="contact-info-list">
+    <a href="mailto:muhammadmubashirf2006@gmail.com" class="contact-item">
+        <div class="contact-icon"><i class="lucide-mail"></i></div>
+        <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted);">Email Address</div>
+            <div style="font-weight: 600;">muhammadmubashirf2006@gmail.com</div>
+        </div>
+    </a>
 
-                        <a href="https://github.com/github_link_here" target="_blank" rel="noopener" class="contact-item">
-                            <div class="contact-icon"><i class="lucide-github"></i></div>
-                            <div>
-                                <div style="font-size: 0.82rem; color: var(--text-muted);">GitHub Profile</div>
-                                <div style="font-weight: 600;">github.com/github_link_here</div>
-                            </div>
-                        </a>
+    <a href="https://github.com/muhammadmubashirfarooq" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon"><i class="lucide-github"></i></div>
+        <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted);">GitHub Profile</div>
+            <div style="font-weight: 600;">github.com/muhammadmubashirfarooq</div>
+        </div>
+    </a>
 
-                        <a href="https://upwork.com/freelancers/upwork_profile_here" target="_blank" rel="noopener" class="contact-item">
-                            <div class="contact-icon"><i class="lucide-briefcase"></i></div>
-                            <div>
-                                <div style="font-size: 0.82rem; color: var(--text-muted);">Upwork Freelance</div>
-                                <div style="font-weight: 600;">upwork.com/freelancers/upwork_profile_here</div>
-                            </div>
-                        </a>
+    <a href="https://www.upwork.com/freelancers/~01ffc5c0e631593d30?mp_source=share" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon"><i class="lucide-briefcase"></i></div>
+        <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted);">Upwork Freelance</div>
+            <div style="font-weight: 600;">upwork.com/freelancers/~01ffc5c0e63159d30</div>
+        </div>
+    </a>
 
-                        <div class="contact-item" style="cursor: default;">
-                            <div class="contact-icon"><i class="lucide-map-pin"></i></div>
-                            <div>
-                                <div style="font-size: 0.82rem; color: var(--text-muted);">Location</div>
-                                <div style="font-weight: 600;">Karachi, Pakistan (Ilma University)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <a href="https://linkedin.com/in/muhammad-mubashir-709489405/" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon"><i class="lucide-linkedin"></i></div>
+        <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted);">LinkedIn Profile</div>
+            <div style="font-weight: 600;">linkedin.com/in/muhammad-mubashir-709489405/</div>
+        </div>
+    </a>
+
+    <div class="contact-item" style="cursor: default;">
+        <div class="contact-icon"><i class="lucide-map-pin"></i></div>
+        <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted);">Location</div>
+            <div style="font-weight: 600;">Karachi, Pakistan (Ilma University)</div>
+        </div>
+    </div>
+</div>
+                    
 
                 <!-- Interactive Contact Form -->
                 <div class="glass-card" style="padding: 2.25rem;">

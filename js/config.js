@@ -17,15 +17,15 @@ const PORTFOLIO_CONFIG = {
         degree: "Bachelor of Science in Computer Science (BSCS)",
         semester: "Currently Enrolled (2nd Semester Onwards)",
         location: "Karachi, Pakistan",
-        email: "mubashir.farooq.dev@example.com", // User can replace with real email
+        email: "mubashir.farooq.dev@example.com",
     },
     
-    socials: {
-        github: "https://github.com/github_link_here",
-        linkedin: "https://linkedin.com/in/linkedin_link_here",
-        upwork: "https://upwork.com/freelancers/upwork_profile_here",
-        email: "mailto:mubashir.farooq.dev@example.com"
-    },
+ socials: {
+    github: "https://github.com/muhammadmubashirfarooq",
+    linkedin: "https://linkedin.com/in/muhammad-mubashir-709489405/",
+    upwork: "https://www.upwork.com/freelancers/~01ffc5c0e631593d30?mp_source=share",
+    email: "mailto:muhammadmubashirf2006@gmail.com"
+},
 
     skills: [
         {
@@ -63,80 +63,130 @@ const PORTFOLIO_CONFIG = {
 
     projects: [
         {
+            id: "ecommerce-fullstack",
+            title: "Full-Stack E-Commerce Platform",
+            subtitle: "Scalable Online Store with Admin & Checkout Systems",
+            category: "Full-Stack & Database",
+            featured: true,
+            badge: "Full-Stack App",
+            description: "A complete backend-driven e-commerce platform built with Node.js and Express, integrated with relational SQL database schemas for order tracking, inventory management, and secure API auth flows.",
+            tags: ["Node.js", "Express", "SQL / MySQL", "REST APIs", "E-Commerce"],
+            highlights: [
+                "Normalized database design for orders, users, and product catalog",
+                "Secure RESTful authentication and user cart session handling",
+                "Admin panel endpoints for inventory management and fulfillment"
+            ],
+            githubUrl: "https://github.com/muhammadmubashirfarooq/ecommerce-nodejs-api",
+            liveUrl: null,
+            accentColor: "indigo"
+        },
+        {
+            id: "shop-co",
+            title: "Shop.co E-Commerce Platform",
+            subtitle: "Pixel-Complete Full-Stack Application",
+            category: "Full-Stack & Database",
+            featured: true,
+            badge: "Full-Stack App",
+            description: "A pixel-complete e-commerce application inspired by Shop.co design, featuring product filtering, cart management, dynamic checkout logic, and normalized database architecture.",
+            tags: ["JavaScript", "Node.js", "Express", "SQL Database", "Tailwind CSS"],
+            highlights: [
+                "Modular RESTful API endpoints for products and user checkout",
+                "Clean database schemas for inventory and dynamic categories",
+                "Full Git version control with structured commit workflows"
+            ],
+            githubUrl: "https://github.com/muhammadmubashirfarooq/shop_co-ecommerce",
+            liveUrl: "https://shop-co-ecommerce.vercel.app",
+            accentColor: "purple"
+        },
+        {
             id: "thermorail",
             title: "ThermoRail / RailGuard",
             subtitle: "Railway Heatwave Monitoring & Speed Restriction Analytics",
             category: "Database & IoT Backend",
             featured: true,
             badge: "Featured Prototype",
-            description: "A comprehensive prototype system designed to monitor railway track heatwave risks. Computes real-time thermal stress calculation models, predicts track buckling risks, and automatically triggers speed restriction analytics for safety compliance.",
-            tags: ["Python", "SQL / Relational DB", "Backend Analytics", "Risk Modeling", "Data Viz"],
+            description: "A customized prototype system designed to monitor railway track heatwave risks using mathematical thermal calculations, predicting track buckling, and executing speed restriction alerts.",
+            tags: ["Python", "SQL / Relational DB", "Backend Analytics", "Risk Modeling"],
             highlights: [
-                "Real-time mathematical heat stress and risk calculation model",
-                "Automated speed restriction recommendation engine based on temperature thresholds",
-                "Relational database schema optimized for time-series thermal sensor data",
-                "Interactive telemetry dashboard with alert triggers"
+                "Real-time mathematical heat stress and risk calculation engine",
+                "Automated speed restriction recommendation triggers based on thermal thresholds",
+                "Relational schema optimized for time-series sensor telemetry data"
             ],
-            githubUrl: "github_link_here",
-            liveUrl: "live_demo_link_here",
+            githubUrl:"https://github.com/muhammadmubashirfarooq/Thermorail-",
+            liveUrl: "https://thermo-rail.vercel.app/",
             accentColor: "emerald"
         },
         {
-            id: "fortyguard",
-            title: "FortyGuard Hackathon Project",
-            subtitle: "Climate Risk Assessment & Heat Analytics Platform",
-            category: "Hackathon & Data Solutions",
+            id: "web-scraping-suite",
+            title: "Automated Web Scraping & Extraction Suite",
+            subtitle: "Multi-Threaded Data Harvesting Engine",
+            category: "Web Scraping & Automation",
             featured: true,
-            badge: "Hackathon Submission",
-            description: "An innovative risk-assessment and heat-monitoring platform engineered under strict competitive hackathon constraints. Built to evaluate urban heat island impacts and provide data-driven mitigation insights.",
-            tags: ["Data Extraction", "Python", "Spatial Analytics", "SQL", "Rapid Prototyping"],
+            badge: "Python Tooling",
+            description: "Custom Python automated scraping solution built for harvesting structured datasets from complex websites, bypassing anti-bot measures, and transforming raw unstructured web data into clean tabular formats.",
+            tags: ["Python", "BeautifulSoup", "Selenium", "Data Extraction", "Anti-Bot"],
             highlights: [
-                "Rapidly developed under tight 48-hour competitive hackathon deadlines",
-                "Integrated spatial data points to analyze local temperature anomalies",
-                "Engineered scalable data ingestion handlers for rapid analysis",
-                "Presented high-impact visualization metrics for urban climate risk"
+                "Custom rate limiting, proxy management, and user-agent rotation",
+                "Automated data parsing, deduplication, and data transformation scripts",
+                "Exports directly to structured JSON, CSV, and SQL database tables"
             ],
-            githubUrl: "github_link_here",
-            liveUrl: "live_demo_link_here",
+            githubUrl: null,
+            liveUrl: null,
             accentColor: "cyan"
         },
         {
-            id: "ecommerce",
-            title: "E-Commerce System Platform",
-            subtitle: "Full-Stack E-Commerce Solution with Robust DB Schema",
-            category: "Full-Stack & Database",
+            id: "database-design-architecture",
+            title: "Enterprise Relational Database Architecture",
+            subtitle: "3NF Schema Design & SQL Optimization",
+            category: "Database Engineering",
             featured: true,
-            badge: "Full-Stack App",
-            description: "A fully functional e-commerce web application featuring inventory management, relational product schemas, cart processing, and admin order fulfillment controls. Fully version-controlled via GitHub.",
-            tags: ["JavaScript / Node.js", "SQL Database", "REST APIs", "E-Commerce", "Admin Panel"],
+            badge: "Database System",
+            description: "Comprehensive relational database design featuring complete 3NF normalization, optimized indexing, custom triggers, stored procedures, and dynamic view queries for high-throughput transactional applications.",
+            tags: ["MySQL", "Database Normalization", "Indexing", "Stored Procedures", "Triggers"],
             highlights: [
-                "Normalized database design supporting multi-category inventory & orders",
-                "Secure RESTful API endpoints for user authentication & checkout logic",
-                "Admin dashboard section for inventory management & order status updates",
-                "Clean modular architecture with clean Git commit history"
+                "3NF schema normalization minimizing redundant data storage",
+                "B-Tree index tuning reducing complex multi-table query latencies",
+                "Automated audit logging triggers for data integrity and security"
             ],
-            githubUrl: "github_link_here",
-            liveUrl: "live_demo_link_here",
+            githubUrl: null,
+            liveUrl: null,
+            accentColor: "teal"
+        },
+        {
+            id: "rest-api-microservices",
+            title: "RESTful API & Microservice Backend",
+            subtitle: "Scalable API Design & Middleware Pipeline",
+            category: "Backend Systems",
+            featured: true,
+            badge: "Backend API",
+            description: "Modular Express.js backend architecture delivering structured REST APIs, custom middleware for rate limiting and logging, JWT authentication, and structured error-handling pipelines.",
+            tags: ["Node.js", "Express.js", "REST API", "JWT Auth", "Middleware"],
+            highlights: [
+                "Standardized JSON error-handling and request validation middlewares",
+                "JWT-based stateless authentication and role-based access control",
+                "Optimized database query handlers for fast request fulfillment"
+            ],
+            githubUrl: null,
+            liveUrl: null,
             accentColor: "indigo"
         },
         {
-            id: "scraping-suite",
-            title: "Web Scraping & Automation Suite",
-            subtitle: "Automated Data Harvesting & ETL Pipeline Tooling",
-            category: "Data & Automation",
+            id: "etl-data-pipeline",
+            title: "Custom ETL & Data Automation Pipeline",
+            subtitle: "Automated Data Ingestion & Transformation Engine",
+            category: "Data Engineering",
             featured: true,
-            badge: "Python Tooling",
-            description: "A custom Python-powered data scraping and extraction suite built for automated web crawling, multi-threaded request processing, pagination handling, and structured data output (JSON/CSV/SQL DB).",
-            tags: ["Python", "BeautifulSoup / Selenium", "Data Extraction", "ETL Pipelines", "Automation"],
+            badge: "Data Pipeline",
+            description: "An automated ETL (Extract, Transform, Load) processing script designed to clean messy datasets, execute mathematical data validation, and populate analytical databases on scheduled interval triggers.",
+            tags: ["Python", "Pandas", "ETL Pipelines", "Data Cleaning", "Automation"],
             highlights: [
-                "Custom anti-rate limiting & header rotation mechanics",
-                "Automated data cleaning, deduplication, and database insertion",
-                "Export pipelines supporting JSON, CSV, and direct SQL table sync",
-                "CLI & GUI options for non-technical execution"
+                "Automated scheduled ingestion of raw external data sources",
+                "Robust null-value handling, type casting, and schema validation",
+                "Seamless pipeline integration into centralized relational data stores"
             ],
-            githubUrl: "github_link_here",
-            liveUrl: "live_demo_link_here",
-            accentColor: "teal"
+            githubUrl: null,
+            liveUrl: null,
+            accentColor: "amber"
         }
     ],
 
